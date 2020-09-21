@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "596efa89-1086-46a9-8f20-539321d800d1",
+		"name": "3Scribe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{ApiKey}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "APIKey",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "a2b5f375-b17b-4250-88a7-011da38d87fe",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a0a544d2-2f26-41e3-b31c-6cdd905c1725",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "c50b8276-b520-49c1-9220-236efd75a50f",
+			"key": "APIKey",
+			"value": ""
+		}
+	],
+	"protocolProfileBehavior": {}
+}
