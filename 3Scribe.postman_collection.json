@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "596efa89-1086-46a9-8f20-539321d800d1",
+		"_postman_id": "6a010248-6028-4364-9870-b4278b0a6f65",
 		"name": "3Scribe",
 		"description": "# 3Scribe Postman Collection\r\n\r\nUse this collection to communicate with [3Scribe](https://3scri.be), the worlds most accurate automated speech transcription service.  Sign up [here](https://3scri.be/register) to get an API key along with 30 minutes free credit to test us out.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -120,6 +120,12 @@
 							"value": "",
 							"description": "File name of the media file to be transcribed.",
 							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "",
+							"description": "One of the following language codes: en-US,en-GB,bg-BG,hr-HR,cs-CZ,da-dk,nl-NL,fi-FI,fr-FR,de-DE,el-GR,hu-HU,it-IT,nb-NO,pl-PL,pt-PT,ro-RO,sk-SK,sl-SI,es-US,es-ES,sv-SE,tr-TR",
+							"type": "text"
 						}
 					]
 				},
@@ -163,6 +169,12 @@
 							"key": "url",
 							"value": "",
 							"description": "A valid URL to a single file to be transcribed.  The file must be publically accessible.",
+							"type": "text"
+						},
+						{
+							"key": "language",
+							"value": "",
+							"description": "One of the following language codes: en-US,en-GB,bg-BG,hr-HR,cs-CZ,da-dk,nl-NL,fi-FI,fr-FR,de-DE,el-GR,hu-HU,it-IT,nb-NO,pl-PL,pt-PT,ro-RO,sk-SK,sl-SI,es-US,es-ES,sv-SE,tr-TR",
 							"type": "text"
 						}
 					]
@@ -208,9 +220,9 @@
 					],
 					"variable": [
 						{
-							"description": "ID code of the transcription job to retrieve.",
 							"key": "jobid",
-							"value": ""
+							"value": "",
+							"description": "ID code of the transcription job to retrieve."
 						}
 					]
 				},
@@ -238,7 +250,6 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "a2b5f375-b17b-4250-88a7-011da38d87fe",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -248,7 +259,6 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "a0a544d2-2f26-41e3-b31c-6cdd905c1725",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -258,10 +268,8 @@
 	],
 	"variable": [
 		{
-			"id": "c911e21e-004b-4b7d-ad1d-f415efe9eb85",
 			"key": "APIKey",
 			"value": "your_3Scribe_API_Key"
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
